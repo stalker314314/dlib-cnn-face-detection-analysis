@@ -64,7 +64,7 @@ tests were run from within VBox with 1 CPU.
 
 ### Code
 
-Whole code is written in Python and is inside `src/` directory. IT should be self-contained
+Whole code is written in Python and is inside `src/` directory. It should be self-contained
 (except installing `requirements.txt`), but since it is fairly small, just go ahead and fiddle with it.
 **Full run take around 1.5 days on my machine.** (you have been warned!:)
 
