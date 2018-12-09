@@ -74,6 +74,15 @@ def main():
                 memory, duration, faces_found = get_limit_for_size(1, MAX_MEMORY, width, height, image_type, upsample_num)
                 print('width= {} height= {} type= {} upsample= {} => memory= {} duration= {} faces= {}'.format(
                     width, height, image_type, upsample_num, memory, duration, faces_found))
+    # This is how we can get ratio compared to duration
+    # import math
+    # area = 3000000
+    # for ratio in (1/4, 1/1.5, 1/2, 1, 1.5, 2, 4):
+    #     width = int(math.sqrt(area/ratio))
+    #     height = int(area/width)
+    #     memory, duration, faces_found = get_limit_for_size(
+    #         MAX_MEMORY-150, MAX_MEMORY, width, height, ImageTypes.BLACK, 0)
+    #     print('width= {} height= {} duration= {}'.format(width, height, duration))
 
 
 if __name__ == '__main__':

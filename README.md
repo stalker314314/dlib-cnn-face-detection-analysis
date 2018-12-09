@@ -86,7 +86,9 @@ and per number of pixels:
 
 Obviously, there is clear trend towards number of pixel where there is linearity. *One thing to check is - what happens
 if we use images with different ratios* other than `4:3` (as in this test), like for panoramas or such, does
-it change used memory? Therefore, I decided to use image area (in megapixels) in following graphs and not simple
+it change used memory? Update: I added small snippet in `main` function to calculate duration vs ratio and it is
+constant for same area (e.g. duration is same if we are doing face recognition for `10000x100` or `1000x1000` or
+`100x10000`). Therefore, I decided to use image area (in megapixels) in following graphs and not simple
 width or height. That being said, let’s see does content of an image affects used memory and processing time:
 
 ![Memory vs type graph](assets/memory-vs-type.png)
